@@ -1,0 +1,18 @@
+# Generates and submits a dependency graph for the Gradle build
+name: Dependency Submission
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+permissions:
+  contents: write
+
+jobs:
+  dependency-submission:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: gradle/actions/dependency-submission@v0
