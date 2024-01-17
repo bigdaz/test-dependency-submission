@@ -14,5 +14,7 @@ jobs:
   dependency-submission:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: gradle/actions/dependency-submission@v0
+    - name: Checkout sources
+      uses: actions/checkout@v4
+    - name: Generate and submit dependency graph
+      uses: gradle/actions/dependency-submission@v0
