@@ -8,4 +8,5 @@ plugins {
 
 dependencies {
     api(project(":list"))
+    implementation("org.apache.ivy:ivy:2.5.1")
 }
