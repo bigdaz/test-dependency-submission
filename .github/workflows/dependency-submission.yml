@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  dependency-submission:
+  submit-dependencies:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout sources
